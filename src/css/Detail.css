@@ -1,0 +1,129 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+  
+  .movie-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .movie-detail-overlay {
+    background-color: rgba(18, 48, 100, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .poster-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 6px;
+  }
+  
+  .shining-poster {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(24, 32, 107, 0.319);
+    border: 5px solid transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .shining-poster::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    border: 5px solid gold;
+    opacity: 0.5;
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  .movie-detail-content {
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  .movie-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .movie-detail p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .movie-detail p strong {
+    color: #5aa0f0;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .like-button, .save-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .like-button {
+    background-color: #ff6347;
+    color: #ffffff;
+  }
+  
+  .like-button:hover {
+    background-color: #ff4500;
+  }
+  
+  .save-button {
+    background-color: #008cba;
+    color: #ffffff;
+  }
+  
+  .save-button:hover {
+    background-color: #005f75;
+  }
+  
